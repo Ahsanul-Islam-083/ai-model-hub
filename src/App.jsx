@@ -23,7 +23,6 @@ const [carts,setCarts] = useState([]);
       <NavBar />
       <Banner />
 
-      {/* name of each tab group should be unique */}
       <div className="tabs justify-center tabs-box bg-transparent">
         <input type="radio" name="my_tabs_1" className={`tab rounded-full w-40 ${activeTab ==="model" &&"bg-linear-to-r from-pink-500 to-red-500 text-white" }`} aria-label="Models" onClick={()=>setActiveTab("model")} defaultChecked />
         <input type="radio" name="my_tabs_1" className={`tab rounded-full w-40 ${activeTab ==="cart" &&"bg-linear-to-r from-pink-500 to-red-500 text-white" }`} aria-label={`Cart (${carts.length})`} onClick={()=>{setActiveTab("cart")}} />
