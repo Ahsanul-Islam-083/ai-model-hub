@@ -1,16 +1,40 @@
-# React + Vite
+# AI Hub - Frontier Model Subscription Platform 🤖
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive React-based web application built for practicing core React concepts like State Management, Props Drilling, and Conditional Rendering. This project simulates a marketplace where users can explore and "subscribe" to various AI models.
 
-Currently, two official plugins are available:
+🔗 **Live Demo:** [https://aimodelhub.netlify.app/](https://aimodelhub.netlify.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 📖 Project Purpose
+This project was developed as a **beginner practice exercise** to master:
+* Handling asynchronous data fetching with the React `use` hook.
+* Managing a shopping cart (Add to Cart, Delete, and Total Calculation).
+* Component-based architecture (splitting UI into reusable parts).
+* Interactive UI feedback using `react-toastify`.
+* Styling with **Tailwind CSS**.
 
-## React Compiler
+## ✨ Features
+- **Dynamic Model Grid:** Displays a list of AI models with status badges (Popular, Favourite, etc.).
+- **Smart Cart Logic:** - Prevents users from adding the same model twice.
+  - Real-time price calculation of the total subscription cost.
+  - Ability to remove items from the cart.
+- **Mock Checkout:** A "Proceed to Checkout" button that clears the cart and provides a success notification.
+- **Responsive Design:** Fully functional on mobile, tablet, and desktop views.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tech Stack
+* **React.js** (Vite)
+* **Tailwind CSS** (Styling)
+* **React Toastify** (Notifications)
+* **Lucide React / Icons** (Visuals)
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📂 Folder Structure
+```text
+src/
+├── components/
+│   ├── Banner.jsx      # Hero section
+│   ├── Navbar.jsx      # Navigation
+│   ├── Models.jsx      # Model list container
+│   ├── ModelCard.jsx   # Individual model cards
+│   ├── Cart.jsx        # Shopping cart logic
+│   └── Footer.jsx      # Footer section
+├── App.jsx             # Root component & State logic
+└── main.jsx            # Entry point
